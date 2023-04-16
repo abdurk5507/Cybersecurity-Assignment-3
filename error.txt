@@ -1,0 +1,30 @@
+ When configured, ns found the right version of tclsh in /usr/bin/tclsh8.6
+but it doesn't seem to be there anymore, so ns will fall back on running the first tclsh in your path. The wrong version of tclsh may break the test suites. Reconfigure and rebuild ns if this is a problem. 
+bot01: 0
+bot02: 1
+router01: 2
+user01: 3
+router1: 4
+router2: 5
+router3: 6
+router4: 7
+router5: 8
+router6: 9
+router7: 10
+user1: 11
+user2: 12
+user3: 13
+user4: 14
+WebServer: 15
+--- Classfier::no-slot{} default handler (tcl/lib/ns-lib.tcl) ---
+	_o21: no target for slot 4294967295
+	_o21 type: Classifier/Hash/Dest
+content dump:
+classifier _o21
+	0 offset
+	0 shift
+	1073741823 mask
+	1 slots
+		slot 3: _o425 (Classifier/Port)
+	-1 default
+---------- Finished standard no-slot{} default handler ----------
